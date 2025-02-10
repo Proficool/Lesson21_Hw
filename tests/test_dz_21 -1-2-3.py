@@ -27,10 +27,8 @@ def test_task4(driver):
     driver = webdriver.Chrome(service=service, options=options)
     driver.get("https://www.google.com/?hl=ru")
     lucky_button = driver.find_element(By.CSS_SELECTOR, "input[aria-label='Мне повезёт!']")
-    assert lucky_button is not None
-    # driver_ru.get("https://www.google.com")
-    # assert driver_ru.execute_script("return navigator.language") == "ru-RU", \
-    #     "Текущий язык браузера не русский"
+    assert lucky_button is not None, "Элемент найден"
+    
 
 
 

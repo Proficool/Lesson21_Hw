@@ -12,7 +12,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 @pytest.fixture()
 def driver():
     """Pytest fixture to set up and tear down the WebDriver instance."""
-    download_dir = "D:/TeachMeSkills"
+    download_dir = "~/Downloads/"
 
     # Chrome options with download preferences
     chrome_options = Options()

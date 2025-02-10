@@ -28,6 +28,6 @@ def test_drag_and_drop(driver):
     # Выполняем перетаскивание
     actions = ActionChains(driver)
     actions.drag_and_drop(draggable, droppable).perform()
-    time.sleep(10)
+  
     # Проверяем, что текст изменился на "Dropped!"
     assert droppable.text == "Dropped!", f"Ожидался текст 'Dropped!', но получен '{droppable.text}'"
